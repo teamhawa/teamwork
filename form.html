@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/form.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="header">
+  <img class="logo" src="css/logo.png" alt="Dove"/>
+  <h1>The Gathering</h1>
+  <h2>Building up people in Jesus' Name</h2>
+</div>
+  <nav>
+    <div class="toggle">
+    <i class="fa fa-bars menu" aria-hidden="true"></i>
+  </div>
+    <div class="navig">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="program.html">Our Programs</a>
+    <a href="join.html">Membership</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+$(document).ready(function(){
+  $('.menu').click(function(){
+    $('.navig').toggleClass('active');
+  })
+})
+</script>
+  <div class="wrap">
+    <img src="css/log.png" class="log">
+          <form>
+          <p>First Name*</p>
+          <input type="text" name="fname" required/>
+          <p>Last Name*</p>
+          <input type="text" name="lname" required/>
+          <p>Password*</p>
+          <input type="Password" name="Password" required/>
+          <p>Email*</p>
+          <input type="Email" name="Email"  required/>
+          <p>Address</p>
+          <input type="text" name="Address">
+          <p>Birthdate</p>
+          <input type="Date" name="Birthdate">
+
+          <input type="submit" name="submit" value="Sign Up">
+          </form>
+      </div>
+  </body>
+  </html>

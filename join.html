@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html><link rel="stylesheet" type="text/css" href="css/nav.css">
+<head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>The Gathering Incorporation</title>
+</head>
+<body>
+  <div class="header">
+  <img class="logo" src="css/logo.png" alt="Dove"/>
+  <h1>The Gathering</h1>
+  <h2>Building up people in Jesus' Name</h2>
+</div>
+<nav>
+  <div class="toggle">
+  <i class="fa fa-bars menu" aria-hidden="true"></i>
+</div>
+  <div class="navig">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="program.html">Our Programs</a>
+  <a href="join.html">Membership</a>
+  <a href="contact.html">Contact</a>
+</div>
+</nav>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+$(document).ready(function(){
+$('.menu').click(function(){
+  $('.navig').toggleClass('active');
+})
+})
+</script>
+<div class="login-box">
+<img src="css/log.png" class="log" alt="person">
+        <form>
+        <p>Username</p>
+        <input type="text" name="username" required/>
+        <p>Password</p>
+        <input type="password" name="password" required />
+        <input type="submit" name="submit" value="Login">
+        <p><a href="form.html">Not a member yet?</a></p>
+        </form>
+    </div>
+  </body>
+  </html>
